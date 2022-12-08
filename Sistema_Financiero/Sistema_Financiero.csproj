@@ -45,6 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="conectarbd.cs" />
+    <Compile Include="conectarsql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conectarsql.Designer.cs">
+      <DependentUpon>conectarsql.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +70,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="conectarsql.resx">
+      <DependentUpon>conectarsql.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
